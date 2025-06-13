@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Registros TXT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Registros TXT</h1>
+        
+        <div class="section">
+            <h2>Nuevo Registro</h2>
+            <label for="fileName">Nombre del archivo:</label>
+            <input type="text" id="fileName" placeholder="ejemplo.txt">
+            
+            <label for="fileContent">Contenido:</label>
+            <div id="fileContent"></div>
+            
+            <button id="saveBtn">Guardar en TXT</button>
+            <button id="loadBtn">Cargar archivo</button>
+            <input type="file" id="fileInput" style="display: none;">
+        </div>
+        
+        <div class="section">
+            <h2>Agregar Elementos</h2>
+            
+            <label for="segmentText">Nuevo Segmento:</label>
+            <textarea id="segmentText" rows="3" placeholder="Contenido del segmento..."></textarea>
+            <button id="addSegmentBtn">Agregar Segmento</button>
+            
+            <label for="blockText">Nuevo Bloque:</label>
+            <textarea id="blockText" rows="3" placeholder="Contenido del bloque..."></textarea>
+            <button id="addBlockBtn">Agregar Bloque</button>
+            
+            <label for="commentText">Nuevo Comentario:</label>
+            <textarea id="commentText" rows="2" placeholder="Escribe tu comentario..."></textarea>
+            <button id="addCommentBtn">Agregar Comentario</button>
+        </div>
+        
+        <div class="section">
+            <h2>Comentarios Predeterminados</h2>
+            <label for="newPredefinedComment">Nuevo comentario predeterminado:</label>
+            <input type="text" id="newPredefinedComment" placeholder="Ej: Revisado por el equipo">
+            <button id="addPredefinedBtn">Agregar a predeterminados</button>
+            
+            <div class="predefined-comments" id="predefinedComments">
+                <!-- Los botones de comentarios predeterminados aparecerán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
